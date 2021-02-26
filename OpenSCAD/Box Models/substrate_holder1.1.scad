@@ -8,7 +8,7 @@ module substrate_holder(x1,y1,z1, s_d)
     x=30;
     y=30;
     z=1.1;
-    d=0.8641;
+    d=1.5;
     
     //negative y
     difference(){
@@ -102,16 +102,16 @@ module substrate_holder(x1,y1,z1, s_d)
                 
              //bracket
              translate([17.5,y/2,z1/2])
-             cylinder(r=1, h=5, center =true);}
+             cylinder(r=1.4, h=8, center =true);}
              
              translate([-17.5,y/2,z1/2])
-             cylinder(r=1, h=5, center =true);}
+             cylinder(r=1.4, h=8, center =true);}
              
              translate([17.5,-(y/2),z1/2])
-             cylinder(r=1, h=5, center =true);}
+             cylinder(r=1.4, h=8, center =true);}
              
              translate([-17.5,-(y/2),z1/2])
-             cylinder(r=1, h=5, center =true);}
+             cylinder(r=1.4, h=8, center =true);}
              
              //bracket guide pins
              translate([17.5,0,z1/2])
