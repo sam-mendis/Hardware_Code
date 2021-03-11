@@ -165,17 +165,11 @@ Vin
 Text Notes 9300 950  0    60   ~ 0
 External Power
 Wire Wire Line
-	2000 6300 2200 6300
-Wire Wire Line
 	2200 6300 2200 6150
 Wire Wire Line
 	2000 6200 2050 6200
 Wire Wire Line
 	2050 6200 2050 6150
-Wire Wire Line
-	2000 7100 2350 7100
-Wire Wire Line
-	2000 6700 2650 6700
 Wire Wire Line
 	1550 3150 1700 3150
 Wire Wire Line
@@ -246,309 +240,53 @@ Wire Wire Line
 Text Label 700  3550 2    60   ~ 0
 Vin
 $Comp
-L base8x-rescue:ADS1115-myParts U1
-U 1 1 59F73110
-P 6000 2350
-F 0 "U1" H 5450 2800 50  0000 C CNN
-F 1 "ADS1115" H 6450 2800 50  0000 C CNN
-F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5950 2300 50  0001 C CNN
-F 3 "" H 5100 2750 50  0001 C CNN
-F 4 "1762981" H 6000 2350 60  0001 C CNN "farnellCode"
-	1    6000 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 59F7332E
-P 6000 2850
-F 0 "#PWR020" H 6000 2600 50  0001 C CNN
-F 1 "GND" H 6000 2700 50  0000 C CNN
-F 2 "" H 6000 2850 50  0000 C CNN
-F 3 "" H 6000 2850 50  0000 C CNN
-	1    6000 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR019
-U 1 1 59F733BD
-P 6000 1300
-F 0 "#PWR019" H 6000 1150 50  0001 C CNN
-F 1 "+5V" H 6000 1440 28  0000 C CNN
-F 2 "" H 6000 1300 50  0000 C CNN
-F 3 "" H 6000 1300 50  0000 C CNN
-	1    6000 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 1300 6000 1500
-$Comp
 L Device:C_Small C1
 U 1 1 59F73A1F
-P 5600 1600
-F 0 "C1" H 5692 1646 50  0000 L CNN
-F 1 "1uF" H 5692 1555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 5600 1600 50  0001 C CNN
-F 3 "" H 5600 1600 50  0001 C CNN
-	1    5600 1600
+P 6500 3600
+F 0 "C1" H 6592 3646 50  0000 L CNN
+F 1 "1uF" H 6592 3555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 6500 3600 50  0001 C CNN
+F 3 "" H 6500 3600 50  0001 C CNN
+	1    6500 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR018
 U 1 1 59F73A65
-P 5600 1700
-F 0 "#PWR018" H 5600 1450 50  0001 C CNN
-F 1 "GND" H 5600 1550 50  0000 C CNN
-F 2 "" H 5600 1700 50  0000 C CNN
-F 3 "" H 5600 1700 50  0000 C CNN
-	1    5600 1700
+P 6500 3700
+F 0 "#PWR018" H 6500 3450 50  0001 C CNN
+F 1 "GND" H 6500 3550 50  0000 C CNN
+F 2 "" H 6500 3700 50  0000 C CNN
+F 3 "" H 6500 3700 50  0000 C CNN
+	1    6500 3700
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 1500 6000 1500
-Connection ~ 6000 1500
-$Comp
-L Device:R_Small R4
-U 1 1 59F73C2B
-P 7150 2050
-F 0 "R4" V 6954 2050 50  0000 C CNN
-F 1 "10K" V 7045 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 7150 2050 50  0001 C CNN
-F 3 "" H 7150 2050 50  0001 C CNN
-F 4 "2073607" H 0   0   50  0001 C CNN "farnellCode"
-	1    7150 2050
-	0    1    1    0   
-$EndComp
-Text GLabel 6700 2150 2    60   Input ~ 0
-SCL
-Text GLabel 6700 2250 2    60   Input ~ 0
-SDA
-$Comp
-L Device:R_Small R3
-U 1 1 59F73F0B
-P 7000 2350
-F 0 "R3" V 7196 2350 50  0000 C CNN
-F 1 "10K" V 7105 2350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 7000 2350 50  0001 C CNN
-F 3 "" H 7000 2350 50  0001 C CNN
-F 4 "2073607" H 0   0   50  0001 C CNN "farnellCode"
-	1    7000 2350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR021
-U 1 1 59F73FA3
-P 7200 2350
-F 0 "#PWR021" H 7200 2200 50  0001 C CNN
-F 1 "+5V" H 7200 2490 28  0000 C CNN
-F 2 "" H 7200 2350 50  0000 C CNN
-F 3 "" H 7200 2350 50  0000 C CNN
-	1    7200 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 2350 6900 2350
-Wire Wire Line
-	7100 2350 7200 2350
-$Comp
-L Jumper:SolderJumper_3_Open J4
-U 1 1 59F747BE
-P 7650 2050
-F 0 "J4" H 7650 1725 50  0000 C CNN
-F 1 "GS3" H 7650 1816 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" V 7738 1976 50  0001 C CNN
-F 3 "" H 7650 2050 50  0001 C CNN
-	1    7650 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR023
-U 1 1 59F74876
-P 7750 2300
-F 0 "#PWR023" H 7750 2050 50  0001 C CNN
-F 1 "GND" H 7750 2150 50  0000 C CNN
-F 2 "" H 7750 2300 50  0000 C CNN
-F 3 "" H 7750 2300 50  0000 C CNN
-	1    7750 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 2050 6700 2050
-Wire Wire Line
-	7750 2300 7750 2250
-Wire Wire Line
-	7750 2250 7650 2250
-$Comp
-L power:+5V #PWR022
-U 1 1 59F74B1E
-P 7750 1800
-F 0 "#PWR022" H 7750 1650 50  0001 C CNN
-F 1 "+5V" H 7750 1940 28  0000 C CNN
-F 2 "" H 7750 1800 50  0000 C CNN
-F 3 "" H 7750 1800 50  0000 C CNN
-	1    7750 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 1800 7750 1850
-Wire Wire Line
-	7750 1850 7650 1850
-$Comp
-L Device:D_Photo D1
-U 1 1 59F7456C
-P 3750 2700
-F 0 "D1" V 3700 2900 50  0000 L CNN
-F 1 "BPW21" H 3710 2590 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3700 2700 50  0001 C CNN
-F 3 "" H 3700 2700 50  0000 C CNN
-F 4 "1045427" H 0   0   50  0001 C CNN "farnellCode"
-	1    3750 2700
-	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR013
 U 1 1 59F74573
-P 3750 1800
-F 0 "#PWR013" H 3750 1650 50  0001 C CNN
-F 1 "+5V" H 3750 1940 28  0000 C CNN
-F 2 "" H 3750 1800 50  0000 C CNN
-F 3 "" H 3750 1800 50  0000 C CNN
-	1    3750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 59F7459B
-P 3750 3100
-F 0 "#PWR014" H 3750 2850 50  0001 C CNN
-F 1 "GND" H 3750 2950 50  0000 C CNN
-F 2 "" H 3750 3100 50  0000 C CNN
-F 3 "" H 3750 3100 50  0000 C CNN
-	1    3750 3100
-	1    0    0    -1  
+P 6900 5950
+F 0 "#PWR013" H 6900 5800 50  0001 C CNN
+F 1 "+5V" H 6900 6090 28  0000 C CNN
+F 2 "" H 6900 5950 50  0000 C CNN
+F 3 "" H 6900 5950 50  0000 C CNN
+	1    6900 5950
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3750 1800 3750 1900
+	6900 5950 7000 5950
 $Comp
 L Device:R_Small R1
 U 1 1 59F761B7
-P 3750 2000
-F 0 "R1" V 3554 2000 50  0000 C CNN
-F 1 "1.2K" V 3645 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 3750 2000 50  0001 C CNN
-F 3 "" H 3750 2000 50  0001 C CNN
-F 4 "2073370" H 0   0   50  0001 C CNN "farnellCode"
-	1    3750 2000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4450 2150 4450 2450
-Wire Wire Line
-	4450 2450 5300 2450
-$Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 59F7708F
-P 3750 2300
-F 0 "JP2" V 3750 2348 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 3795 2348 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3750 2300 50  0001 C CNN
-F 3 "" H 3750 2300 50  0001 C CNN
-	1    3750 2300
+P 7100 5950
+F 0 "R1" V 6904 5950 50  0000 C CNN
+F 1 "1.2K" V 6995 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 7100 5950 50  0001 C CNN
+F 3 "" H 7100 5950 50  0001 C CNN
+F 4 "2073370" H 3350 3950 50  0001 C CNN "farnellCode"
+	1    7100 5950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 2400 3750 2500
-Wire Wire Line
-	4450 2150 4250 2150
-Connection ~ 3750 2150
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 59F77572
-P 3750 2950
-F 0 "JP3" V 3750 2998 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 3795 2998 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3750 2950 50  0001 C CNN
-F 3 "" H 3750 2950 50  0001 C CNN
-	1    3750 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3750 2800 3750 2850
-Wire Wire Line
-	3750 3050 3750 3100
-$Comp
-L Device:D_Photo D2
-U 1 1 59F77B1E
-P 4300 3350
-F 0 "D2" V 4250 3550 50  0000 L CNN
-F 1 "BPW21" H 4260 3240 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4250 3350 50  0001 C CNN
-F 3 "" H 4250 3350 50  0000 C CNN
-F 4 "1045427" H 0   0   50  0001 C CNN "farnellCode"
-	1    4300 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR016
-U 1 1 59F77B25
-P 4300 2450
-F 0 "#PWR016" H 4300 2300 50  0001 C CNN
-F 1 "+5V" H 4300 2590 28  0000 C CNN
-F 2 "" H 4300 2450 50  0000 C CNN
-F 3 "" H 4300 2450 50  0000 C CNN
-	1    4300 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 59F77B2B
-P 4300 3750
-F 0 "#PWR017" H 4300 3500 50  0001 C CNN
-F 1 "GND" H 4300 3600 50  0000 C CNN
-F 2 "" H 4300 3750 50  0000 C CNN
-F 3 "" H 4300 3750 50  0000 C CNN
-	1    4300 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 2450 4300 2550
-$Comp
-L Device:R_Small R2
-U 1 1 59F77B34
-P 4300 2650
-F 0 "R2" V 4104 2650 50  0000 C CNN
-F 1 "1.2K" V 4195 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 4300 2650 50  0001 C CNN
-F 3 "" H 4300 2650 50  0001 C CNN
-F 4 "2073370" H 0   0   50  0001 C CNN "farnellCode"
-	1    4300 2650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP4
-U 1 1 59F77B3B
-P 4300 2950
-F 0 "JP4" V 4300 2998 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 4345 2998 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4300 2950 50  0001 C CNN
-F 3 "" H 4300 2950 50  0001 C CNN
-	1    4300 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 3050 4300 3150
-Wire Wire Line
-	4300 2750 4300 2800
-Wire Wire Line
-	5000 2800 4300 2800
-Connection ~ 4300 2800
-Wire Wire Line
-	4300 3450 4300 3500
-Wire Wire Line
-	4300 3700 4300 3750
-Wire Wire Line
-	5000 2550 5000 2800
-Wire Wire Line
-	5000 2550 5300 2550
+Connection ~ 7250 5950
 $Comp
 L Jumper:SolderJumper_3_Open J2
 U 1 1 59F7BE39
@@ -596,19 +334,17 @@ Text GLabel 1550 3550 2    60   Input ~ 0
 $Comp
 L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP2
 U 1 1 5A00C0AD
-P 4700 1850
-F 0 "TP2" H 4758 1970 50  0000 L CNN
-F 1 "Test_Point" H 4758 1879 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4900 1850 50  0001 C CNN
-F 3 "" H 4900 1850 50  0001 C CNN
-F 4 "2293786" H 0   0   50  0001 C CNN "farnellCode"
-	1    4700 1850
-	1    0    0    -1  
+P 6500 5225
+F 0 "TP2" H 6558 5345 50  0000 L CNN
+F 1 "Test_Point" H 6558 5254 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 6700 5225 50  0001 C CNN
+F 3 "" H 6700 5225 50  0001 C CNN
+F 4 "2293786" H 1800 3375 50  0001 C CNN "farnellCode"
+	1    6500 5225
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4700 1850 4700 2250
-Wire Wire Line
-	4700 2250 5300 2250
+	6500 5225 6500 4825
 $Comp
 L power:+5V #PWR032
 U 1 1 5A00C450
@@ -722,49 +458,33 @@ NoConn ~ 10050 1150
 $Comp
 L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP3
 U 1 1 5A3700D5
-P 4250 2100
-F 0 "TP3" H 4308 2220 50  0000 L CNN
-F 1 "Test_Point" H 4308 2129 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4450 2100 50  0001 C CNN
-F 3 "" H 4450 2100 50  0001 C CNN
-F 4 "2293786" H 0   0   50  0001 C CNN "farnellCode"
-	1    4250 2100
-	1    0    0    -1  
+P 7200 5450
+F 0 "TP3" H 7258 5570 50  0000 L CNN
+F 1 "Test_Point" H 7258 5479 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 7400 5450 50  0001 C CNN
+F 3 "" H 7400 5450 50  0001 C CNN
+F 4 "2293786" H 2950 3350 50  0001 C CNN "farnellCode"
+	1    7200 5450
+	0    -1   -1   0   
 $EndComp
-$Comp
-L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP4
-U 1 1 5A370173
-P 5000 2850
-F 0 "TP4" H 5058 2970 50  0000 L CNN
-F 1 "Test_Point" H 5058 2879 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 5200 2850 50  0001 C CNN
-F 3 "" H 5200 2850 50  0001 C CNN
-F 4 "2293786" H 0   0   50  0001 C CNN "farnellCode"
-	1    5000 2850
-	-1   0    0    1   
-$EndComp
-Text GLabel 4650 1200 0    60   Input ~ 0
+Text GLabel 6700 5575 2    60   Input ~ 0
 A_V_D_LOC
 Wire Wire Line
-	5300 2150 5150 2150
+	6200 4625 6200 5575
 Wire Wire Line
-	5150 2150 5150 1200
-Wire Wire Line
-	5150 1200 4650 1200
+	6200 5575 6700 5575
 $Comp
 L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP5
 U 1 1 5A371768
-P 5150 1200
-F 0 "TP5" H 5208 1320 50  0000 L CNN
-F 1 "Test_Point" H 5208 1229 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 5350 1200 50  0001 C CNN
-F 3 "" H 5350 1200 50  0001 C CNN
-F 4 "2293786" H 0   0   50  0001 C CNN "farnellCode"
-	1    5150 1200
-	1    0    0    -1  
+P 6200 5575
+F 0 "TP5" H 6258 5695 50  0000 L CNN
+F 1 "Test_Point" H 6258 5604 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 6400 5575 50  0001 C CNN
+F 3 "" H 6400 5575 50  0001 C CNN
+F 4 "2293786" H 1050 4375 50  0001 C CNN "farnellCode"
+	1    6200 5575
+	-1   0    0    1   
 $EndComp
-Text Notes 5000 3350 0    60   ~ 0
-This ADC will become ADS122C04 when it comes\nout to support analog inputs more negative than GND\nand I_sense will connect to AIN1
 $Comp
 L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP6
 U 1 1 5A58BDB1
@@ -783,35 +503,14 @@ Wire Wire Line
 	10100 4100 10900 4100
 Text Label 10300 4100 0    60   ~ 0
 A_I_sense
-$Comp
-L Device:Jumper_NO_Small JP5
-U 1 1 59F77B46
-P 4300 3600
-F 0 "JP5" V 4300 3648 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 4345 3648 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4300 3600 50  0001 C CNN
-F 3 "" H 4300 3600 50  0001 C CNN
-	1    4300 3600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4250 2100 4250 2150
-Connection ~ 4250 2150
-Connection ~ 5000 2800
+	7200 5450 7250 5450
 Wire Wire Line
-	6000 1500 6000 1850
+	7250 5950 7300 5950
 Wire Wire Line
-	3750 2150 3750 2200
-Wire Wire Line
-	4300 2800 4300 2850
-Wire Wire Line
-	4250 2150 3750 2150
-Wire Wire Line
-	5000 2800 5000 2850
+	7250 5450 7250 5950
 Text Notes 10600 3050 0    50   ~ 0
 Current Sense Resistor
-Wire Wire Line
-	7250 2050 7500 2050
 NoConn ~ 1500 7500
 NoConn ~ 1500 7400
 NoConn ~ 1500 7300
@@ -1020,8 +719,6 @@ F 3 "" H 1500 6200 50  0000 C CNN
 $EndComp
 Text GLabel 1500 6500 0    60   Input ~ 0
 SDA
-Text GLabel 1500 6900 0    60   Input ~ 0
-A_V_D
 $Comp
 L Connector_Generic:Conn_02x14_Odd_Even J3
 U 1 1 59C14E89
@@ -1037,9 +734,8 @@ Wire Wire Line
 	1475 7100 1500 7100
 NoConn ~ 1500 7200
 Wire Wire Line
-	3750 2100 3750 2150
+	7200 5950 7250 5950
 NoConn ~ 1500 6600
-NoConn ~ 1500 6700
 Wire Wire Line
 	750  4550 850  4550
 $Comp
@@ -1068,4 +764,334 @@ F 3 "~" H 3950 5575 50  0001 C CNN
 $EndComp
 Text GLabel 1500 6300 0    60   Input ~ 0
 A_V_D
+$Comp
+L ADS1115:ADS1115 IC1
+U 1 1 60492990
+P 6900 3850
+F 0 "IC1" H 7450 4115 50  0000 C CNN
+F 1 "ADS1115" H 7450 4024 50  0000 C CNN
+F 2 "base8x:ADS1115" H 7850 3950 50  0001 L CNN
+F 3 "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-4-channel-adc-breakouts.pdf" H 7850 3850 50  0001 L CNN
+F 4 "ADAFRUIT INDUSTRIES - ADS1115 - 16 BID ADC- 4 CHANNEL PROGRAMMABLE" H 7850 3750 50  0001 L CNN "Description"
+F 5 "3.25" H 7850 3650 50  0001 L CNN "Height"
+F 6 "Adafruit" H 7850 3550 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADS1115" H 7850 3450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 7850 3350 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 7850 3250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7850 3150 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7850 3050 50  0001 L CNN "Arrow Price/Stock"
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8000 3850
+NoConn ~ 8000 3950
+Text GLabel 6900 4050 0    50   Input ~ 0
+SCL
+Text GLabel 6900 4150 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R_Small R4
+U 1 1 59F73C2B
+P 6225 4250
+F 0 "R4" V 6029 4250 50  0000 C CNN
+F 1 "10K" V 6120 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 6225 4250 50  0001 C CNN
+F 3 "" H 6225 4250 50  0001 C CNN
+F 4 "2073607" H -925 2200 50  0001 C CNN "farnellCode"
+	1    6225 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR022
+U 1 1 59F74B1E
+P 6050 4025
+F 0 "#PWR022" H 6050 3875 50  0001 C CNN
+F 1 "+5V" H 6050 4165 28  0000 C CNN
+F 2 "" H 6050 4025 50  0000 C CNN
+F 3 "" H 6050 4025 50  0000 C CNN
+	1    6050 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4025 6050 4075
+Wire Wire Line
+	6050 4075 5950 4075
+Wire Wire Line
+	6050 4475 5950 4475
+Wire Wire Line
+	6050 4525 6050 4475
+$Comp
+L power:GND #PWR023
+U 1 1 59F74876
+P 6050 4525
+F 0 "#PWR023" H 6050 4275 50  0001 C CNN
+F 1 "GND" H 6050 4375 50  0000 C CNN
+F 2 "" H 6050 4525 50  0000 C CNN
+F 3 "" H 6050 4525 50  0000 C CNN
+	1    6050 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open J4
+U 1 1 59F747BE
+P 5950 4275
+F 0 "J4" H 5950 4475 50  0000 C CNN
+F 1 "GS3" H 5950 4400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" V 6038 4201 50  0001 C CNN
+F 3 "" H 5950 4275 50  0001 C CNN
+	1    5950 4275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 4250 6325 4250
+Wire Wire Line
+	6125 4250 6100 4250
+Wire Wire Line
+	6100 4275 6100 4250
+Wire Wire Line
+	6900 3500 6900 3850
+Connection ~ 6900 3500
+Wire Wire Line
+	6500 3500 6900 3500
+Wire Wire Line
+	6900 3300 6900 3500
+$Comp
+L power:+5V #PWR019
+U 1 1 59F733BD
+P 6900 3300
+F 0 "#PWR019" H 6900 3150 50  0001 C CNN
+F 1 "+5V" H 6900 3440 28  0000 C CNN
+F 2 "" H 6900 3300 50  0000 C CNN
+F 3 "" H 6900 3300 50  0000 C CNN
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 59F7332E
+P 6900 3950
+F 0 "#PWR020" H 6900 3700 50  0001 C CNN
+F 1 "GND" H 6900 3800 50  0000 C CNN
+F 2 "" H 6900 3950 50  0000 C CNN
+F 3 "" H 6900 3950 50  0000 C CNN
+	1    6900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4350 6425 4350
+$Comp
+L power:+5V #PWR021
+U 1 1 59F73FA3
+P 6425 4350
+F 0 "#PWR021" H 6425 4200 50  0001 C CNN
+F 1 "+5V" H 6425 4490 28  0000 C CNN
+F 2 "" H 6425 4350 50  0000 C CNN
+F 3 "" H 6425 4350 50  0000 C CNN
+	1    6425 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 59F73F0B
+P 6600 4350
+F 0 "R3" V 6796 4350 50  0000 C CNN
+F 1 "10K" V 6705 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 6600 4350 50  0001 C CNN
+F 3 "" H 6600 4350 50  0001 C CNN
+F 4 "2073607" H -400 2000 50  0001 C CNN "farnellCode"
+	1    6600 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 4350 6700 4350
+Connection ~ 6200 5575
+Wire Wire Line
+	6900 4450 6750 4450
+Wire Wire Line
+	6750 4450 6750 4625
+Wire Wire Line
+	6750 4625 6200 4625
+Wire Wire Line
+	6900 4550 6775 4550
+Wire Wire Line
+	6775 4550 6775 4825
+Wire Wire Line
+	6775 4825 6500 4825
+Wire Wire Line
+	6900 4650 6825 4650
+Wire Wire Line
+	6900 4750 6900 4900
+Wire Wire Line
+	8150 5950 8200 5950
+Wire Wire Line
+	7900 5950 7950 5950
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 59F77572
+P 8050 5950
+F 0 "JP3" V 8050 5998 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 8095 5998 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 5950 50  0001 C CNN
+F 3 "" H 8050 5950 50  0001 C CNN
+	1    8050 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5950 7600 5950
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 59F7708F
+P 7400 5950
+F 0 "JP2" V 7400 5998 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 7445 5998 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7400 5950 50  0001 C CNN
+F 3 "" H 7400 5950 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 59F7459B
+P 8200 5950
+F 0 "#PWR014" H 8200 5700 50  0001 C CNN
+F 1 "GND" H 8200 5800 50  0000 C CNN
+F 2 "" H 8200 5950 50  0000 C CNN
+F 3 "" H 8200 5950 50  0000 C CNN
+	1    8200 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Photo D1
+U 1 1 59F7456C
+P 7800 5950
+F 0 "D1" V 7750 6150 50  0000 L CNN
+F 1 "BPW21" H 7760 5840 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 7750 5950 50  0001 C CNN
+F 3 "" H 7750 5950 50  0000 C CNN
+F 4 "1045427" H 4050 3250 50  0001 C CNN "farnellCode"
+	1    7800 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 5450
+Wire Wire Line
+	7250 5025 6825 5025
+Wire Wire Line
+	6825 4650 6825 5025
+Wire Wire Line
+	7250 5025 7250 5450
+$Comp
+L Device:D_Photo D2
+U 1 1 59F77B1E
+P 9025 5525
+F 0 "D2" V 8975 5725 50  0000 L CNN
+F 1 "BPW21" H 8985 5415 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 8975 5525 50  0001 C CNN
+F 3 "" H 8975 5525 50  0000 C CNN
+F 4 "1045427" H 4725 2175 50  0001 C CNN "farnellCode"
+	1    9025 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 59F77B2B
+P 9425 5525
+F 0 "#PWR017" H 9425 5275 50  0001 C CNN
+F 1 "GND" H 9425 5375 50  0000 C CNN
+F 2 "" H 9425 5525 50  0000 C CNN
+F 3 "" H 9425 5525 50  0000 C CNN
+	1    9425 5525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 59F77B34
+P 8325 5525
+F 0 "R2" V 8129 5525 50  0000 C CNN
+F 1 "1.2K" V 8220 5525 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 8325 5525 50  0001 C CNN
+F 3 "" H 8325 5525 50  0001 C CNN
+F 4 "2073370" H 4025 2875 50  0001 C CNN "farnellCode"
+	1    8325 5525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 59F77B3B
+P 8625 5525
+F 0 "JP4" V 8625 5573 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 8670 5573 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8625 5525 50  0001 C CNN
+F 3 "" H 8625 5525 50  0001 C CNN
+	1    8625 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8725 5525 8825 5525
+Wire Wire Line
+	8425 5525 8475 5525
+Wire Wire Line
+	8475 4825 8475 5525
+Connection ~ 8475 5525
+Wire Wire Line
+	9125 5525 9175 5525
+Wire Wire Line
+	9375 5525 9425 5525
+Wire Wire Line
+	8225 4825 8475 4825
+$Comp
+L base8x-rescue:Test_Point-Connector_Specialized-base8x-rescue TP4
+U 1 1 5A370173
+P 8525 4825
+F 0 "TP4" H 8583 4945 50  0000 L CNN
+F 1 "Test_Point" H 8583 4854 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 8725 4825 50  0001 C CNN
+F 3 "" H 8725 4825 50  0001 C CNN
+F 4 "2293786" H 3525 1975 50  0001 C CNN "farnellCode"
+	1    8525 4825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 59F77B46
+P 9275 5525
+F 0 "JP5" V 9275 5573 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 9320 5573 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9275 5525 50  0001 C CNN
+F 3 "" H 9275 5525 50  0001 C CNN
+	1    9275 5525
+	1    0    0    -1  
+$EndComp
+Connection ~ 8475 4825
+Wire Wire Line
+	8475 5525 8525 5525
+Wire Wire Line
+	8475 4825 8525 4825
+Text Notes 5100 1725 0    60   ~ 0
+This ADC will become ADS122C04 when it comes\nout to support analog inputs more negative than GND\nand I_sense will connect to AIN1
+$Comp
+L power:+5V #PWR016
+U 1 1 59F77B25
+P 8125 5525
+F 0 "#PWR016" H 8125 5375 50  0001 C CNN
+F 1 "+5V" H 8125 5665 28  0000 C CNN
+F 2 "" H 8125 5525 50  0000 C CNN
+F 3 "" H 8125 5525 50  0000 C CNN
+	1    8125 5525
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8125 5525 8225 5525
+Wire Wire Line
+	8225 4900 8225 4825
+Wire Wire Line
+	6900 4900 8225 4900
+Wire Wire Line
+	2000 6300 2200 6300
+Wire Wire Line
+	2000 6700 2650 6700
+NoConn ~ 1500 6900
+Text GLabel 1500 6700 0    60   Input ~ 0
+~A_CS
+Wire Wire Line
+	2000 7100 2350 7100
 $EndSCHEMATC

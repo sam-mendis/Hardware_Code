@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADS1115
+D ADAFRUIT INDUSTRIES - ADS1115 - 16 BID ADC- 4 CHANNEL PROGRAMMABLE
+K
+F https://cdn-learn.adafruit.com/downloads/pdf/adafruit-4-channel-adc-breakouts.pdf
+$ENDCMP
+#
+#End Doc Library
