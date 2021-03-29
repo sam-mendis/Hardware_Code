@@ -77,24 +77,25 @@ module substrate_holder(x1,y1,z1, s_d)
         translate([0,0,z1/2]) 
         cube([x,y,1], center = true);}
             // cartridge heater
-                translate([0,0,-z1/4])
+                translate([0,0,-(z1/4)])
                 rotate([0,90,0])
                 cylinder(r=3, h=x1+1, center = true);}
                 
              // temp sensor
-                translate([0,0,6])
+                translate([0,0,2
+                ])
                 rotate([0,90,0])
                 cylinder(r=3, h=x1+1, center = true);} 
              // air flow 
               
-              translate([0,0,z1/2])
-              cube([x-10,y-9,7], center =true);}
+              translate([0,0,z1/3+2])
+              cube([x-5,y-9,9], center =true);}
               
-              translate([0,15,z1/2-2])
-              cube([x-5,y-19,2], center =true);}
+              translate([0,15,z1/2-6])
+              cube([x-4,y-19,10], center =true);}
               
-              translate([0,-15,z1/2-2])
-              cube([x-5,y-19,2], center =true);}
+              translate([0,-15,z1/2-6])
+              cube([x-4,y-19,10], center =true);}
              
               
                 
@@ -115,9 +116,9 @@ module substrate_holder(x1,y1,z1, s_d)
              
              //bracket guide pins
              translate([17.5,0,z1/2])
-             cylinder(r=0.5, h=5, center =true);}
+             cylinder(r=0.7, h=5, center =true);}
              translate([-17.5,0,z1/2])
-             cylinder(r=0.5, h=5, center =true);}
+             cylinder(r=0.7, h=5, center =true);}
              
                 
                 
