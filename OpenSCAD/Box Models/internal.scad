@@ -6,7 +6,7 @@ module internal(){
     include<substrate_holder1.1.scad>
     
     include<substrate-outline.scad>
-    translate([0,0,15])
+    translate([0,0,20])
     substrate();
     
     
@@ -22,4 +22,4 @@ module internal(){
     
 }
 
-internal();
+//internal();

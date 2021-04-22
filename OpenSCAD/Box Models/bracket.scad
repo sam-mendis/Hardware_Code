@@ -48,4 +48,4 @@ module casing(x1,y1,z1,b,s_d){
     
 }
 
-casing(40,40,3,1,3.1);
+//casing(40,40,3,1,3.1);

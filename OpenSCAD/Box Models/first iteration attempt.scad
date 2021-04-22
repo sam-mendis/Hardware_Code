@@ -14,12 +14,11 @@
 
 //  s_d= screw diameter
 //  s_l= screw length
- include <Substrate_holder.scad>
- translate([5,0,-5])
- Substrate_holder(40,40,30);
+
 
  // outer shell
  include <outer_shell.scad>
+ translate([0,0,-60])
 outer_shell(110,100,70,30,30,20,4,10,1.3,4);
 
 //substrate layout
@@ -50,7 +49,7 @@ translate([5,0,-5])
     
     //metal lid
     include<metal_lid.scad>
-    translate([0,0,41])
+    translate([0,0,60])
     rotate([180,0,0])
     metal_lid(110,100,4,1.3);
     

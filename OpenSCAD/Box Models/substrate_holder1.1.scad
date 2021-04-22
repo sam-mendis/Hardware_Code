@@ -91,11 +91,11 @@ module substrate_holder(x1,y1,z1, s_d)
               translate([0,0,z1/3+2])
               cube([x-5,y-9,9], center =true);}
               
-              translate([0,15,z1/2-7.5])
-              cube([x-4,y-19,10], center =true);}
+              translate([0,15,z1/2-5])
+              cube([x-4,y-19,5], center =true);}
               
-              translate([0,-15,z1/2-7.5])
-              cube([x-4,y-19,10], center =true);}
+              translate([0,-15,z1/2-5])
+              cube([x-4,y-19,5], center =true);}
              
               
                 

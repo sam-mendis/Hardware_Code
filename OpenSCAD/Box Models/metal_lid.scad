@@ -84,4 +84,4 @@ cylinder(r=1,h=6, center = true);
 
 }
 
-metal_lid(110,100,4.2,1);
+//metal_lid(110,100,4.2,1);
