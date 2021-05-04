@@ -4,7 +4,8 @@ module casing(x1,y1,z1,b,s_d){
     
     x=30;
     y=30;
-    
+    translate([0,0,-0.5])
+    cube([x1-10,2,z1+2], center = true);
     difference(){
     difference(){
     difference(){
@@ -13,13 +14,16 @@ module casing(x1,y1,z1,b,s_d){
     difference(){
     difference(){
     difference(){
+
         
-    cube([x1,y1,z1], center = true);
+    cube([x1,y1,z1+1], center = true);
         translate([0,(y/4+b/2),0])
        cube([x,y/2,z1+10], center = true);}
        
        translate([0,-(y/4+b/2),0])
        cube([x,y/2,z1+10], center = true);}
+       
+       
         
         
     
@@ -39,13 +43,13 @@ module casing(x1,y1,z1,b,s_d){
     
     //bracket guide pins
              translate([17.5,0,0])
-             cylinder(r=0.5, h=z1+10, center =true);}
+             cylinder(r=1, h=z1+10, center =true);}
              translate([-17.5,0,0])
-             cylinder(r=0.5, h=z1+10, center =true);}
+             cylinder(r=1, h=z1+10, center =true);}
     
     
     
     
 }
 
-//casing(40,40,3,1,3.1);
+casing(40,40,3,1,3.1);
