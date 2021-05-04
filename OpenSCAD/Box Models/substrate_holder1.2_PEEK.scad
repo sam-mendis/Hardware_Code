@@ -75,7 +75,7 @@ module substrate_holder(x1,y1,z1, s_d)
         
         //substrate outline
         translate([0,0,z1/2]) 
-        cube([x,y,2], center = true);}
+        cube([x,y,2.7], center = true);}
             // cartridge heater
                 translate([0,0,-(z1/4)])
                 rotate([0,90,0])
